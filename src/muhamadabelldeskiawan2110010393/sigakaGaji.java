@@ -9,19 +9,28 @@ package muhamadabelldeskiawan2110010393;
  * @author User
  */
 public class sigakaGaji {
-    private int gajiId;
+    
+    private String gajiId;
     private int gajiKaryawan;
     private int gajiLembur;
     private int gajiTotal;
-    private int gajiBayarPinjaman;
-    private int gajiTgl;
-    private int gajiBlnKe;
-    private int gajiStatus;
+    private String gajiBayarPinjaman;
+    private String gajiTgl;
+    private String gajiBlnKe;
+    private String gajiStatus;
     
     public sigakaGaji(){}
     public sigakaGaji(String value){
         System.out.println(value);
     }
+    
+     public void setGAJIID(String gajiId){
+                this.gajiId=gajiId;
+            }
+            
+            public String getGAJIID(){
+                return this.gajiId;
+            }
     
     public void setGajiKaryawan(String gol){
     if (gol.equals("Gol.1")){
@@ -57,4 +66,36 @@ public class sigakaGaji {
     public int gajiTotal(){
     return getGajiKaryawan()+getGajiLembur();
     }
+    
+    public void setGAJIBAYARPINJAMAN(String gajiBayarPinjaman){
+                this.gajiBayarPinjaman=gajiBayarPinjaman;
+            }
+            
+            public String getGAJIBAYARPINJAMAN(){
+                return this.gajiBayarPinjaman;
+            }
+            
+    public void setGAJITGL(String gajiTgl){
+                this.gajiTgl=gajiTgl;
+            }
+            
+            public String getGAJITGL(){
+                return this.gajiTgl;
+            }
+            
+    public void setGAJIBLNKE(String gajiBlnKe){
+                this.gajiBlnKe=gajiBlnKe;
+            }
+            
+            public String getGAJIBLNKE(){
+                return this.gajiBlnKe;
+            }
+    public void setGAJISTATUS(String gajiStatus){
+                this.gajiStatus=gajiStatus;
+            }
+            
+            public String getGAJISTATUS(){
+                return this.gajiStatus;
+            }
+    
 }
