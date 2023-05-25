@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package muhamadabelldeskiawan2110010393;
+import java.util.ArrayList;
 
 /**
  *
@@ -10,25 +11,31 @@ package muhamadabelldeskiawan2110010393;
  */
 public class sigakaGaji {
     
-    private String gajiId;
+    private ArrayList<String> gajiId;
     private int gajiKaryawan;
     private int gajiLembur;
     private int gajiTotal;
-    private String gajiBayarPinjaman;
-    private String gajiTgl;
-    private String gajiBlnKe;
-    private String gajiStatus;
+    private ArrayList<String> gajiBayarPinjaman;
+    private ArrayList<String> gajiTgl;
+    private ArrayList<String> gajiBlnKe;
+    private ArrayList<String> gajiStatus;
     
-    public sigakaGaji(){}
+    public sigakaGaji(){
+    gajiId= new ArrayList<>();
+    gajiBayarPinjaman= new ArrayList<>();
+    gajiTgl= new ArrayList<>();
+    gajiBlnKe= new ArrayList<>();
+    gajiStatus= new ArrayList<>();
+    }
     public sigakaGaji(String value){
         System.out.println(value);
     }
     
-     public void setGAJIID(String gajiId){
-                this.gajiId=gajiId;
+     public void setGAJIID(String value){
+                this.gajiId.add(value);
             }
             
-            public String getGAJIID(){
+     public ArrayList<String> getGAJIID(){
                 return this.gajiId;
             }
     
@@ -67,34 +74,34 @@ public class sigakaGaji {
     return getGajiKaryawan()+getGajiLembur();
     }
     
-    public void setGAJIBAYARPINJAMAN(String gajiBayarPinjaman){
-                this.gajiBayarPinjaman=gajiBayarPinjaman;
+    public void setGAJIBAYARPINJAMAN(String value){
+                this.gajiBayarPinjaman.add(value);
             }
             
-            public String getGAJIBAYARPINJAMAN(){
+    public ArrayList<String> getGAJIBAYARPINJAMAN(){
                 return this.gajiBayarPinjaman;
             }
             
-    public void setGAJITGL(String gajiTgl){
-                this.gajiTgl=gajiTgl;
+    public void setGAJITGL(String value){
+                this.gajiTgl.add(value);
             }
             
-            public String getGAJITGL(){
+    public ArrayList<String> getGAJITGL(){
                 return this.gajiTgl;
             }
             
-    public void setGAJIBLNKE(String gajiBlnKe){
-                this.gajiBlnKe=gajiBlnKe;
+    public void setGAJIBLNKE(String value){
+                this.gajiBlnKe.add(value);
             }
             
-            public String getGAJIBLNKE(){
+    public ArrayList<String> getGAJIBLNKE(){
                 return this.gajiBlnKe;
             }
-    public void setGAJISTATUS(String gajiStatus){
-                this.gajiStatus=gajiStatus;
+    public void setGAJISTATUS(String value){
+                this.gajiStatus.add(value);
             }
             
-            public String getGAJISTATUS(){
+    public ArrayList<String> getGAJISTATUS(){
                 return this.gajiStatus;
             }
     

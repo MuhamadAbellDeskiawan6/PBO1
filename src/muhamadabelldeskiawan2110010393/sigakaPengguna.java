@@ -3,61 +3,74 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package muhamadabelldeskiawan2110010393;
+import java.util.ArrayList;
 
 /**
  *
  * @author User
  */
 public class sigakaPengguna {
-    private String penggunaId, penggunaUsername, penggunaPassword, penggunaNama, penggunaFoto, penggunaHakAkses ;
+    private ArrayList<String> penggunaId;
+    private ArrayList<String> penggunaUsername; 
+    private ArrayList<String> penggunaPassword; 
+    private ArrayList<String> penggunaNama; 
+    private ArrayList<String> penggunaFoto; 
+    private ArrayList<String> penggunaHakAkses ;
             
-            public sigakaPengguna() {}
-            
-            public void setPENGGUNAID(String penggunaId){
-                this.penggunaId=penggunaId;
+            public sigakaPengguna() {
+            penggunaId= new ArrayList<>();
+            penggunaUsername= new ArrayList<>();
+            penggunaPassword= new ArrayList<>();
+            penggunaNama= new ArrayList<>();
+            penggunaFoto= new ArrayList<>();
+            penggunaHakAkses= new ArrayList<>();
             }
             
-            public String getPENGGUNAID(){
+            public void setPENGGUNAID(String value){
+                this.penggunaId.add(value);
+            }
+            
+            public ArrayList<String> getPENGGUNAID(){
                 return this.penggunaId;
             }
             
-            public void setPENGGUNAUSERNAME(String penggunaUsername){
-                this.penggunaUsername=penggunaUsername;
+            public void setPENGGUNAUSERNAME(String value){
+                this.penggunaUsername.add(value);
             }
             
-            public String getPENGGUNAUSEERNAME(){
+            public ArrayList<String> getPENGGUNAUSEERNAME(){
                 return this.penggunaUsername;
             }
             
-            public void setPENGGUNAPASSWORD(String penggunaPassword){
-                this.penggunaPassword=penggunaPassword;
+            public void setPENGGUNAPASSWORD(String value){
+                this.penggunaPassword.add(value);
             }
             
-            public String getPENGGUNAPASSWORD(){
+            public ArrayList<String> getPENGGUNAPASSWORD(){
                 return this.penggunaPassword;
             }
           
-            public void setPENGGUNANAMA(String penggunaNama){
-                this.penggunaNama=penggunaNama;
+            public void setPENGGUNANAMA(String value){
+                this.penggunaNama.add(value);
             }
             
-            public String getPENGGUNANAMA(){
+            public ArrayList<String> getPENGGUNANAMA(){
                 return this.penggunaNama;
             }
             
-            public void setPENGGUNAFOTO(String penggunaFoto){
-                this.penggunaFoto=penggunaFoto;
+            public void setPENGGUNAFOTO(String value){
+                this.penggunaFoto.add(value);
             }
             
-            public String getPENGGUNAFOTO(){
+            public ArrayList<String> getPENGGUNAFOTO(){
                 return this.penggunaFoto;
             }
             
-            public void setPENGGUNAHAKAKSES(String penggunaHakAkses){
-                this.penggunaHakAkses=penggunaHakAkses;
+            public void setPENGGUNAHAKAKSES(String value){
+                this.penggunaHakAkses.add(value);
             }
             
-            public String getPENGGUNAHAKAKSES(){
+            public ArrayList<String> getPENGGUNAHAKAKSES(){
                 return this.penggunaHakAkses;
             }
 }

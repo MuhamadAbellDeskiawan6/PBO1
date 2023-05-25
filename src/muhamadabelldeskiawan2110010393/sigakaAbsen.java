@@ -3,37 +3,46 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package muhamadabelldeskiawan2110010393;
+import java.util.ArrayList;
 
 /**
  *
  * @author User
  */
 public class sigakaAbsen {
-    private String absenId, absenKaryawan, absenHari, absenStatus;
+    private ArrayList<String> absenId; 
+    private ArrayList<String> absenKaryawan;
+    private ArrayList<String> absenHari; 
+    private ArrayList<String> absenStatus;
             
-            public sigakaAbsen() {}
-            
-            public void setABSENID(String absenId){
-                this.absenId=absenId;
+            public sigakaAbsen() {
+            absenId= new ArrayList<>();
+            absenKaryawan= new ArrayList<>();
+            absenHari= new ArrayList<>();
+            absenStatus= new ArrayList<>();
             }
             
-            public String getABSENID(){
+            public void setABSENID(String value){
+                this.absenId.add(value);
+            }
+            
+            public ArrayList<String> getABSENID(){
                 return this.absenId;
             }
             
-            public void setABSENKARYWAN(String absenKaryawan){
-                this.absenKaryawan=absenKaryawan;
+            public void setABSENKARYWAN(String value){
+                this.absenKaryawan.add(value);
             }
             
-            public String getABSENKARYAWAN(){
+            public ArrayList<String> getABSENKARYAWAN(){
                 return this.absenKaryawan;
             }
             
-            public void setABSENHARI(String absenHari){
-                this.absenHari=absenHari;
+            public void setABSENHARI(String value){
+                this.absenHari.add(value);
             }
             
-            public String getABSENHARI(){
+            public ArrayList<String> getABSENHARI(){
                 return this.absenHari;
             }
 }

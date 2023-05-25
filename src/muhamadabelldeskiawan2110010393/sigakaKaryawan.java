@@ -3,85 +3,104 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package muhamadabelldeskiawan2110010393;
+import java.util.ArrayList;
 
 /**
  *
  * @author User
  */
 public class sigakaKaryawan extends sigakaGaji {
-    private String idKaryawan, jabatan, nama, tmptLahir, tglLahir, alamat, tglGabung, nomorHp, rekening;
+    private ArrayList<String> idKaryawan; 
+    private ArrayList<String> jabatan;
+    private ArrayList<String> nama;
+    private ArrayList<String> tmptLahir; 
+    private ArrayList<String> tglLahir;
+    private ArrayList<String> alamat; 
+    private ArrayList<String> tglGabung; 
+    private ArrayList<String> nomorHp; 
+    private ArrayList<String> rekening;
             
-            public sigakaKaryawan() {}
-            
-            public void setIDKARYAWAN(String idKaryawan){
-                this.idKaryawan=idKaryawan;
+            public sigakaKaryawan() {
+            idKaryawan= new ArrayList<>();
+            jabatan= new ArrayList<>();
+            nama= new ArrayList<>();
+            tmptLahir= new ArrayList<>();
+            tglLahir= new ArrayList<>();
+            alamat= new ArrayList<>();
+            tglGabung= new ArrayList<>();
+            nomorHp= new ArrayList<>();
+            rekening= new ArrayList<>();
             }
             
-            public String getIDKARYAWAN(){
+            public void setIDKARYAWAN(String value){
+                this.idKaryawan.add(value);
+            }
+            
+            public ArrayList<String> getIDKARYAWAN(){
                 return this.idKaryawan;
             }
             
-            public void setJABATAN(String jabatan){
-                this.jabatan=jabatan;
+            public void setJABATAN(String value){
+                this.jabatan.add(value);
             }
             
-            public String getJABATAN(){
+            public ArrayList<String> getJABATAN(){
                 return this.jabatan;
             }
             
-            public void setNAMA(String nama){
-                this.nama=nama;
+            public void setNAMA(String value){
+                this.nama.add(value);
             }
             
-            public String getNAMA(){
+            public ArrayList<String> getNAMA(){
               return this.nama;
             }
             
-            public void setTMPTLAHIR(String tmptLahir){
-                this.tmptLahir=tmptLahir;
+            public void setTMPTLAHIR(String value){
+                this.tmptLahir.add(value);
             }
             
-            public String getTMPTLAHIR() {
+            public ArrayList<String> getTMPTLAHIR() {
                return this.tmptLahir;
             }
             
-            public void setTGLLAHIR(String tglLahir) {
-                this.tglLahir=tglLahir;
+            public void setTGLLAHIR(String value) {
+                this.tglLahir.add(value);
             }
             
-            public String getTGLLAHIR(){
+            public ArrayList<String> getTGLLAHIR(){
                 return this.tglLahir;
             }
             
-            public void setALAMAT(String alamat) {
-                this.alamat=alamat;
+            public void setALAMAT(String value) {
+                this.alamat.add(value);
             } 
             
-            public String getALAMAT(){
+            public ArrayList<String> getALAMAT(){
                 return this.alamat;
             }
             
-            public void setTGLGABUNG(String tglGabung) {
-                this.tglGabung=tglGabung;
+            public void setTGLGABUNG(String value) {
+                this.tglGabung.add(value);
             }
             
-             public String getTGLGABUNG(){
+             public ArrayList<String> getTGLGABUNG(){
                 return this.tglGabung;
             }
             
-            public void setNOMORHP(String nomorHP) {
-                this.nomorHp=nomorHP;
+            public void setNOMORHP(String value) {
+                this.nomorHp.add(value);
             }
             
-             public String getNOMORHP(){
+             public ArrayList<String> getNOMORHP(){
                 return this.nomorHp;
             }
             
-            public void setREKENING(String rekening) {
-                this.rekening=rekening;
+            public void setREKENING(String value) {
+                this.rekening.add(value);
             }
             
-             public String getREKENING(){
+             public ArrayList<String> getREKENING(){
                 return this.rekening;
             }
            

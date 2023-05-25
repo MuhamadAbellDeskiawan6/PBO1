@@ -3,33 +3,40 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package muhamadabelldeskiawan2110010393;
+import java.util.ArrayList;
 
 /**
  *
  * @author User
  */
 public class sigakaJabatan {
-    private String jabatanId, jabatanNama, jabatanGaji;   
+    private ArrayList<String> jabatanId;
+    private ArrayList<String> jabatanNama; 
+    private ArrayList<String> jabatanGaji;   
     
-    public sigakaJabatan(){}
+    public sigakaJabatan(){
+    jabatanId= new ArrayList<>();
+    jabatanNama= new ArrayList<>();
+    jabatanGaji= new ArrayList<>();
+    }
     
-    public void setJABATANID(String jabatanId){
-      this.jabatanId=jabatanId;
+    public void setJABATANID(String value){
+      this.jabatanId.add(value);
    }
-      public String getJABATANID(){
+      public ArrayList<String> getJABATANID(){
          return this.jabatanId;
     }
       
-public void setJABATANNAMA(String jabatanNama){
-      this.jabatanNama=jabatanNama;
-   }
-      public String getJABATANNAMA(){
-         return this.jabatanNama;
-    }
-public void setJABATANGAJI(String jabatanGaji){
-      this.jabatanGaji=jabatanGaji;
-   }
-      public String getJABATANGAJI(){
-         return this.jabatanGaji;
-    }
+    public void setJABATANNAMA(String value){
+          this.jabatanNama.add(value);
+       }
+          public ArrayList<String> getJABATANNAMA(){
+             return this.jabatanNama;
+        }
+    public void setJABATANGAJI(String value){
+          this.jabatanGaji.add(value);
+       }
+          public ArrayList<String> getJABATANGAJI(){
+             return this.jabatanGaji;
+        }
 }
