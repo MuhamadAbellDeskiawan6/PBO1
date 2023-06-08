@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package muhamadabelldeskiawan2110010393;
+package sigakaJabatan;
 import java.util.ArrayList;
 
 /**
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author User
  */
 public class sigakaJabatan {
-    private ArrayList<String> jabatanId;
+    private ArrayList<Integer> jabatanId;
     private ArrayList<String> jabatanNama; 
     private ArrayList<String> jabatanGaji;   
     
@@ -20,10 +20,10 @@ public class sigakaJabatan {
     jabatanGaji= new ArrayList<>();
     }
     
-    public void setJABATANID(String value){
+    public void setJABATANID(int value){
       this.jabatanId.add(value);
    }
-      public ArrayList<String> getJABATANID(){
+      public ArrayList<Integer> getJABATANID(){
          return this.jabatanId;
     }
       
@@ -39,4 +39,10 @@ public class sigakaJabatan {
           public ArrayList<String> getJABATANGAJI(){
              return this.jabatanGaji;
         }
+    public void TambahJabatan(int jabatanId, String jabatanNama, String jabatanGaji){
+    
+        setJABATANID(jabatanId);
+        setJABATANNAMA(jabatanNama);
+        setJABATANGAJI(jabatanGaji);
+    }
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package muhamadabelldeskiawan2110010393;
+package sigakaPengguna;
 import java.util.ArrayList;
 
 /**
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author User
  */
 public class sigakaPengguna {
-    private ArrayList<String> penggunaId;
+    private ArrayList<Integer> penggunaId;
     private ArrayList<String> penggunaUsername; 
     private ArrayList<String> penggunaPassword; 
     private ArrayList<String> penggunaNama; 
@@ -26,11 +26,11 @@ public class sigakaPengguna {
             penggunaHakAkses= new ArrayList<>();
             }
             
-            public void setPENGGUNAID(String value){
+            public void setPENGGUNAID(int value){
                 this.penggunaId.add(value);
             }
             
-            public ArrayList<String> getPENGGUNAID(){
+            public ArrayList<Integer> getPENGGUNAID(){
                 return this.penggunaId;
             }
             
@@ -72,5 +72,14 @@ public class sigakaPengguna {
             
             public ArrayList<String> getPENGGUNAHAKAKSES(){
                 return this.penggunaHakAkses;
+            }
+            
+            public void TambahPengguna(int penggunaId, String penggunaUsername, String penggunaPassword, String penggunaNama, String penggunaFoto, String penggunaHakAkses){
+                setPENGGUNAID(penggunaId);
+                setPENGGUNAUSERNAME(penggunaUsername);
+                setPENGGUNAPASSWORD(penggunaPassword);
+                setPENGGUNANAMA(penggunaNama);
+                setPENGGUNAFOTO(penggunaFoto);
+                setPENGGUNAHAKAKSES(penggunaHakAkses);
             }
 }

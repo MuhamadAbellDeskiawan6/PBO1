@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package muhamadabelldeskiawan2110010393;
+package sigakaPinjam;
 import java.util.ArrayList;
 
 /**
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author User
  */
 public class sigakaPinjam {
-    private ArrayList<String> pinjamId; 
+    private ArrayList<Integer> pinjamId; 
     private ArrayList<String> pinjamKaryawan; 
     private ArrayList<String> pinjamJumlah; 
     private ArrayList<String> pinjamBayar;
@@ -22,11 +22,11 @@ public class sigakaPinjam {
             pinjamBayar = new ArrayList<>();
             }
             
-            public void setPINJAMID(String value){
+            public void setPINJAMID(int value){
                 this.pinjamId.add(value);
             }
             
-            public ArrayList<String> getPINJAMID(){
+            public ArrayList<Integer> getPINJAMID(){
                 return this.pinjamId;
             }
             
@@ -52,6 +52,14 @@ public class sigakaPinjam {
             
             public ArrayList<String> getPINJAMBAYAR(){
                 return this.pinjamBayar;
+            }
+            
+            public void TambahPinjam(int pinjamID, String pinjamKaryawan, String pinjamJumlah, String pinjamBayar){
+            
+                setPINJAMID(pinjamID);
+                setPINJAMKARYAWAN(pinjamKaryawan);
+                setPINJAMJUMLAH(pinjamJumlah);
+                setPINJAMBAYAR(pinjamBayar);
             }
             
 }

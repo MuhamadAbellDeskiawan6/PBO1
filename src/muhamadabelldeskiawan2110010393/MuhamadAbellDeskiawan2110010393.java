@@ -4,6 +4,10 @@
  */
 package muhamadabelldeskiawan2110010393;
 
+import sigakaKaryawan.sigakaKaryawan;
+import java.util.ArrayList;
+import forms.frameUtama;
+
 /**
  *
  * @author User
@@ -62,7 +66,7 @@ public class MuhamadAbellDeskiawan2110010393 {
 //        System.out.println("Gaji Karyawan :"+obj.getGajiKaryawan());
 //        System.out.println("GAJI ID :"+obj5.getGAJIID()+"\n GAJI BAYAR PINJAMAN :"+obj5.getGAJIBAYARPINJAMAN()+"\n GAJI TANGGAL :"+obj5.getGAJITGL()+"\n GAJI BULAN KE :"+obj5.getGAJIBLNKE()+"\n GAJI STATUS :"+obj5.getGAJISTATUS()+"\n Gaji Lembur :"+obj5.getGajiLembur()+"\n Gaji Total :"+obj5.gajiTotal());
         
-          sigakaKaryawan obj = new sigakaKaryawan();
+         /* sigakaKaryawan obj = new sigakaKaryawan();
           obj.setIDKARYAWAN("1");
           obj.setJABATAN("HRD");
           obj.setNAMA("MUHAMAD ABELL DESKIAWAN");
@@ -70,8 +74,8 @@ public class MuhamadAbellDeskiawan2110010393 {
           obj.setTGLLAHIR("06-12-2004");
           obj.setALAMAT("JL.KELAYAN.A GG.SIDODADI");
           obj.setTGLGABUNG("23-05-2023");
-          obj.setNOMORHP("0895703228001");
-          obj.setREKENING("7015005558");
+          obj.setNOMORHP(Integer.valueOf("0895703228001"));
+          obj.setREKENING(Integer.valueOf("7015005558"));
           
           sigakaJabatan obj1 = new sigakaJabatan();
           obj1.setJABATANID("1");
@@ -112,6 +116,10 @@ public class MuhamadAbellDeskiawan2110010393 {
           System.out.println("PENGGUNA ID :"+obj3.getPENGGUNAID()+"\n PENGGUNA USERNAME :"+obj3.getPENGGUNAUSEERNAME()+"\n PENGGUNA PASSWORD"+obj3.getPENGGUNAPASSWORD()+"\n PENGGUNA NAMA :"+obj3.getPENGGUNANAMA()+"\n PENGGUNA FOTO :"+obj3.getPENGGUNAFOTO()+"\n PENGGUNA HAK AKSES :"+obj3.getPENGGUNAHAKAKSES());
           System.out.println("PINJAM ID :"+obj4.getPINJAMID()+"\n PINJAM KARYAWAN :"+obj4.getPINJAMKARYAWAN()+"\n PINJAM JUMLAH :"+obj4.getPINJAMJUMLAH()+"\n PINJAM BAYAR :"+obj4.getPINJAMBAYAR());
           System.out.println("GAJI ID :"+obj5.getGAJIID()+"\n GAJI BAYAR PINJAMAN :"+obj5.getGAJIBAYARPINJAMAN()+"\n GAJI TANGGAL :"+obj5.getGAJITGL()+"\n GAJI BULAN KE :"+obj5.getGAJIBLNKE()+"\n GAJI STATUS :"+obj5.getGAJISTATUS()+"\n Gaji Karyawan :"+obj5.getGajiKaryawan()+"\n Gaji Lembur :"+obj5.getGajiLembur()+"\n Gaji Total :"+obj5.gajiTotal());
-    }
+   */
+         new frameUtama().setVisible(true);
+         
+         
+}
     
 }

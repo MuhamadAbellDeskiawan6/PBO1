@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/sigakaPengguna.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/sigakaAbsen.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/sigakaKaryawan.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/sigakaJabatan.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/sigakaPinjam.java</file>
-            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/sigakaGaji.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/sigakaAbsen/sigakaAbsen.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/frameUtama.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/frameAbsen.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/frameGaji.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/frameJabatan.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/frameKaryawan.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/framePengguna.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/sigakaGaji/sigakaGaji.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/sigakaKaryawan/sigakaKaryawan.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/forms/framePinjam.java</file>
             <file>file:/C:/Users/User/Documents/NetBeansProjects/MuhamadAbellDeskiawan2110010393/src/muhamadabelldeskiawan2110010393/MuhamadAbellDeskiawan2110010393.java</file>
         </group>
     </open-files>

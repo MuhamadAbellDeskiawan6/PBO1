@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package muhamadabelldeskiawan2110010393;
+package sigakaAbsen;
 import java.util.ArrayList;
 
 /**
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author User
  */
 public class sigakaAbsen {
-    private ArrayList<String> absenId; 
+    private ArrayList<Integer> absenId; 
     private ArrayList<String> absenKaryawan;
     private ArrayList<String> absenHari; 
     private ArrayList<String> absenStatus;
@@ -22,11 +22,11 @@ public class sigakaAbsen {
             absenStatus= new ArrayList<>();
             }
             
-            public void setABSENID(String value){
+            public void setABSENID(int value){
                 this.absenId.add(value);
             }
             
-            public ArrayList<String> getABSENID(){
+            public ArrayList<Integer> getABSENID(){
                 return this.absenId;
             }
             
@@ -44,5 +44,20 @@ public class sigakaAbsen {
             
             public ArrayList<String> getABSENHARI(){
                 return this.absenHari;
+            }
+            
+            public void setABSENSTATUS(String value){
+                this.absenStatus.add(value);
+            }
+            
+            public ArrayList<String> getABSENSTATUS(){
+                return this.absenStatus;
+            }
+            
+            public void TambahAbsen(int absenId, String absenKaryawan, String absenHari, String absenStatus){
+                setABSENID(absenId);
+                setABSENKARYWAN(absenKaryawan);
+                setABSENHARI(absenHari);
+                setABSENSTATUS(absenStatus);
             }
 }

@@ -2,15 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package muhamadabelldeskiawan2110010393;
+package sigakaKaryawan;
 import java.util.ArrayList;
+import sigakaGaji.sigakaGaji;
 
 /**
  *
  * @author User
  */
-public class sigakaKaryawan extends sigakaGaji {
-    private ArrayList<String> idKaryawan; 
+public class sigakaKaryawan  {
+    private ArrayList<Integer> idKaryawan; 
     private ArrayList<String> jabatan;
     private ArrayList<String> nama;
     private ArrayList<String> tmptLahir; 
@@ -32,11 +33,11 @@ public class sigakaKaryawan extends sigakaGaji {
             rekening= new ArrayList<>();
             }
             
-            public void setIDKARYAWAN(String value){
+            public void setIDKARYAWAN(int value){
                 this.idKaryawan.add(value);
             }
             
-            public ArrayList<String> getIDKARYAWAN(){
+            public ArrayList<Integer> getIDKARYAWAN(){
                 return this.idKaryawan;
             }
             
@@ -103,5 +104,17 @@ public class sigakaKaryawan extends sigakaGaji {
              public ArrayList<String> getREKENING(){
                 return this.rekening;
             }
-           
+             
+            public void tambahKaryawan(int idKaryawan, String jabatan, String nama, String tmptLahir, String tglLahir, String alamat, String tglGabung, String nomorHp, String rekening){
+        
+                setIDKARYAWAN(idKaryawan);
+                setJABATAN(jabatan);
+                setNAMA(nama);
+                setTMPTLAHIR(tmptLahir);
+                setTGLLAHIR(tglLahir);
+                setALAMAT(alamat);
+                setTGLGABUNG(tglGabung);
+                setNOMORHP(nomorHp);
+                setREKENING(rekening);
+            }
 }

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package muhamadabelldeskiawan2110010393;
+package sigakaGaji;
 import java.util.ArrayList;
 
 /**
@@ -11,17 +11,20 @@ import java.util.ArrayList;
  */
 public class sigakaGaji {
     
-    private ArrayList<String> gajiId;
-    private int gajiKaryawan;
-    private int gajiLembur;
-    private int gajiTotal;
+    private ArrayList<Integer> gajiId;
+    private ArrayList<String> gajiKaryawan;
+    private ArrayList<String> gajiLembur;
+    private ArrayList<String> gajiTotal;
     private ArrayList<String> gajiBayarPinjaman;
     private ArrayList<String> gajiTgl;
-    private ArrayList<String> gajiBlnKe;
+    private ArrayList<Integer> gajiBlnKe;
     private ArrayList<String> gajiStatus;
     
     public sigakaGaji(){
     gajiId= new ArrayList<>();
+    gajiKaryawan= new ArrayList<>();
+    gajiLembur= new ArrayList<>();
+    gajiTotal= new ArrayList<>();
     gajiBayarPinjaman= new ArrayList<>();
     gajiTgl= new ArrayList<>();
     gajiBlnKe= new ArrayList<>();
@@ -31,47 +34,36 @@ public class sigakaGaji {
         System.out.println(value);
     }
     
-     public void setGAJIID(String value){
+     public void setGAJIID(int value){
                 this.gajiId.add(value);
             }
             
-     public ArrayList<String> getGAJIID(){
+     public ArrayList<Integer> getGAJIID(){
                 return this.gajiId;
             }
     
-    public void setGajiKaryawan(String gol){
-    if (gol.equals("Gol.1")){
-        gajiKaryawan=3500000;
-    } else if (gol.equals("Gol.2")){
-        gajiKaryawan=4000000;
-    }else {
-        gajiKaryawan=4500000;
-    }
+     public void setGAJIKARYAWAN(String value){
+                this.gajiKaryawan.add(value);
+            }
+
+     public ArrayList<String> getGAJIKARYAWAN() {
+            return this.gajiKaryawan;
+        }
+    
+    public void setGAJILEMBUR(String value){
+        this.gajiLembur.add(value);
     }
     
-    public int getGajiKaryawan() {
-        return this.gajiKaryawan;
-    }
-    
-    public void setGajiLembur(int jamKerja){
-       
-        if (jamKerja==0){
-            gajiLembur=0;
-        }else if (jamKerja>=1 && jamKerja<=2){
-             gajiLembur=getGajiKaryawan()+300000;
-        } else if (jamKerja>=3 && jamKerja<=4){
-            gajiLembur=getGajiKaryawan()+400000;
-        } else {
-            gajiLembur=getGajiKaryawan()+600000;
-    }
-    }
-    
-    public int getGajiLembur(){
+    public ArrayList<String> getGAJILEMBUR(){
     return this.gajiLembur;
     }
     
-    public int gajiTotal(){
-    return getGajiKaryawan()+getGajiLembur();
+    public void setGAJITOTAL(String value){
+        this.gajiTotal.add(value);
+    }
+    
+    public ArrayList<String> getGAJITOTAL(){
+    return this.gajiTotal;
     }
     
     public void setGAJIBAYARPINJAMAN(String value){
@@ -90,11 +82,11 @@ public class sigakaGaji {
                 return this.gajiTgl;
             }
             
-    public void setGAJIBLNKE(String value){
+    public void setGAJIBLNKE(int value){
                 this.gajiBlnKe.add(value);
             }
             
-    public ArrayList<String> getGAJIBLNKE(){
+    public ArrayList<Integer> getGAJIBLNKE(){
                 return this.gajiBlnKe;
             }
     public void setGAJISTATUS(String value){
@@ -104,5 +96,15 @@ public class sigakaGaji {
     public ArrayList<String> getGAJISTATUS(){
                 return this.gajiStatus;
             }
-    
+    public void TambahGaji(int gajiId, String gajiKaryawan, String gajiLembur, String gajiTotal, String gajiBayarPinjaman, String gajiTgl, int gajiBlnKe, String gajiStatus){
+        
+        setGAJIID(gajiId);
+        setGAJIKARYAWAN(gajiKaryawan);
+        setGAJILEMBUR(gajiLembur);
+        setGAJITOTAL(gajiTotal);
+        setGAJIBAYARPINJAMAN(gajiBayarPinjaman);
+        setGAJITGL(gajiTgl);
+        setGAJIBLNKE(gajiBlnKe);
+        setGAJISTATUS(gajiStatus);
+    }
 }
